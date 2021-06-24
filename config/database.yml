@@ -37,5 +37,6 @@ test:
 production:
   <<: *default
   database: crowdaxcore_production
-  username: crowdax
-  password: <%= ENV['CROWDAXCORE_DATABASE_PASSWORD'] %>
+  username: deploy
+  #password: <%= ENV['CROWDAXCORE_DATABASE_PASSWORD'] %>
+  password: Rails.application.credentials.dig(:production, :db_password)
