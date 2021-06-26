@@ -22,17 +22,10 @@ default: &default
 development:
   <<: *default
   database: crowdaxcore_development
-  host: localhost
-  username: crowdax
-  password: ihatepass   
-
  
 test:
   <<: *default
   database: crowdaxcore_test
-  host: localhost
-  username: crowdax
-  password: ihatepass
 
 production:
   <<: *default
