@@ -1,2 +1,2 @@
-server '18.236.114.255', user: 'deploy', roles: %w{web app db}
+server '34.221.192.8', user: 'deploy', roles: %w{web app db}
 set :rails_env, 'production'
