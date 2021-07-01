@@ -87,6 +87,6 @@ test:
 #
 production:
   <<: *default
-  #atabase: crowdaxcoredb
-  #username: deploy
+  database: crowdaxcore
+  username: deploy
   #password: <%= ENV['CROWDAXCORE_DATABASE_PASSWORD'] %>
