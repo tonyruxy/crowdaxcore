@@ -1,8 +1,5 @@
 Rails.application.routes.draw do
+  
+  root 'static#home'
 
-  namespace :api, defaults: { format: :json } do
-    namespace :v1 do
-      root 'home#index'
-    end
-  end
 end
