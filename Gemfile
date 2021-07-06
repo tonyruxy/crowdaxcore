@@ -20,7 +20,7 @@ gem 'jbuilder', '~> 2.7'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+ gem 'bcrypt', '~> 3.1.16'
 
 
 gem 'capistrano', '~> 3.11'
@@ -37,6 +37,9 @@ gem 'bootsnap', '>= 1.4.4', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'rspec-rails', '~> 5.0.0'
+  gem 'shoulda-matchers', '~> 4.0'
+  gem "factory_bot_rails"
+  gem "faker"
 end
 
 group :development do
@@ -54,7 +57,6 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-#gem 'bcrypt', '~> 3.1', '>=3.1.12'
 #gem 'rack-cors', :require => 'rack/cors'
 gem 'ed25519', '>= 1.2', '< 2.0'
 #gem 'bcrypt_pbkdf', '>= 1.0', '< 2.0'
