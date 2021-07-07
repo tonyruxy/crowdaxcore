@@ -9,7 +9,8 @@ Rails.application.routes.draw do
       delete :logout, to: "sessions#logout"
       get :logged_in, to: "sessions#logged_in"
       
-     # resources :ventures, only: [:index, :show, :create, :update, :destroy]
+      resources :api_keys, only: [:index, :show, :create, :update, :destroy]
+      #resources :ventures, only: [:index, :show, :create, :update, :destroy]
       
       #resources :venture_shares
    #   resources :venture_shares, controller: 'VentureShares', only: [:index, :show, :create, :update, :destroy]
