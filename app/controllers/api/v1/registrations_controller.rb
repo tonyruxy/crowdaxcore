@@ -2,7 +2,7 @@
 module Api
   module V1
     class RegistrationsController < ApplicationController
-     # before_action :restrict_access
+      before_action :restrict_access
       def create
         user = User.create!(
           firstname: params['user']['firstname'],
